@@ -17,4 +17,10 @@ const mynums = [1,2,3,4,5,6,7,8,9,10]
 
 //and if we don't use these two method then we use foreach method 
 
- console.log(numbers);
+   const newNum =[]
+   mynums.forEach( (numbers) => {
+      if(numbers > 4){
+         newNum.push(numbers)
+      }
+   })
+ console.log(newNum);
