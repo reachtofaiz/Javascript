@@ -30,6 +30,7 @@ const mynums = [1,2,3,4,5,6,7,8,9,10]
 // a-find the genre which is History ?
 // b-find the publish book in year 1992 ? 
 // c-find the edition of book in  2010 ?
+
 const books = [
    { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
    { title: 'Book Two', genre: 'Non-Fiction', publish: 1992, edition: 2008 },
@@ -57,6 +58,7 @@ const books = [
 */
 
 
-     let result = books.filter( (book) => book.edition === 2010)    
+/*     let result = books.filter( (book) => book.edition === 2010)    
 
       console.log(result)
+*/      
