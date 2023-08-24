@@ -21,7 +21,8 @@
 				"esbenp.prettier-vscode",
 				"vscode-icons-team.vscode-icons",
 				"wayou.vscode-todo-highlight",
-				"ritwickdey.LiveServer"
+				"ritwickdey.LiveServer",
+				"chadalen.vscode-jetbrains-icon-theme"
 			],
 			"settings": {
 				"editor.wordWrap": "on",
