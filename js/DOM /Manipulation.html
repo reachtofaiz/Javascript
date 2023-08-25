@@ -17,8 +17,33 @@
 </body>
     <script>
         const text = document.querySelector('.parent')
-        console.log(text);
-        console.log(text.children);
-        console.log(text.innerHTML);
+        
+        // console.log(text);
+        // console.log(text.children);
+        // console.log(text.innerHTML);
+        // console.log(text.children[2].innerHTML);
+
+        // for (let i = 0; i < text.children.length; i++) {
+        //     console.log(text.children[i].innerHTML);
+        // }
+
+        text.children[0].style.color = "orange"
+        text.children[1].style.color = "orange"
+
+         text.children[4].style.color = "green"
+         text.children[5].style.color = "green"
+
+         console.log(text.firstElementChild.innerHTML);
+         console.log(text.lastElementChild.innerHTML);
+
+         const month = document.querySelector('.parent')
+         console.log(month);
+
+
+
+         console.log("NODES: ",text.childNodes);
+        // the above code is based on node list.It shows how many text are there
+
+        
     </script>
 </html>
