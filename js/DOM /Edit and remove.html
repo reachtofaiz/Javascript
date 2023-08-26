@@ -15,7 +15,7 @@
     </ul>
 </body>
 <script>
-    
+
     // we can obtained the text by two ways by using js
     // one way is by using inerHTML but this is not customised way
     // another way by direct create a text node
@@ -37,6 +37,24 @@
     optimised_way("JQuery")
     optimised_way("MongoDB")
     optimised_way("Django")
+
+// Edit
+
+const edit = document.querySelector("li:nth-child(2)")
+// edit.innerHTML = "Mojo"
+// But this is not optimised way
+const newli = document.createElement('li')
+newli.textContent = "Mojo"
+edit.replaceWith(newli)
+
+// Edit at Javascript
+
+const text = document.querySelector('li')
+console.log(text);
+const li = document.createElement('li')
+console.log(li);
+li.textContent = ("Typescript")
+text.replaceWith(li)
 </script>
 
 </html>
