@@ -49,12 +49,22 @@ edit.replaceWith(newli)
 
 // Edit at Javascript
 
-const text = document.querySelector('li')
-console.log(text);
-const li = document.createElement('li')
-console.log(li);
-li.textContent = ("Typescript")
-text.replaceWith(li)
+// const text = document.querySelector('li')
+// console.log(text);
+// const li = document.createElement('li')
+// console.log(li);
+// li.textContent = ("Typescript")
+// text.replaceWith(li)
+
+// another way of edit
+const text = document.querySelector("li:first-child")
+text.outerHTML = '<li>Typescript</li>'
+
+// Remove
+
+const del = document.querySelector('li:last-child')
+console.log(del);
+del.remove()
 </script>
 
 </html>
