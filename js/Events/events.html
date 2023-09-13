@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <div id="image">
+        <ul>
+            <li class="birds"><img src="https://cdn.pixabay.com/photo/2013/04/04/12/34/mountains-100367_640.jpg" alt=""></li>
+            <li class="tree"><img src="https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171_640.jpg" alt=""></li>
+            <li class="mountain"><img src="https://cdn.pixabay.com/photo/2013/10/02/23/03/mountains-190055_640.jpg" alt=""></li>
+            <li class="butterflies"><img src="https://cdn.pixabay.com/photo/2016/01/08/11/57/butterflies-1127666_640.jpg" alt=""></li>
+            <li class="boat"><img src="https://cdn.pixabay.com/photo/2017/12/15/13/51/polynesia-3021072_640.jpg" alt=""></li>
+        </ul>
+    </div>
+</body>
+<script>
+
+    // this is to select a particular objects.
+
+    /*
+    const images = document.getElementById('image')
+    images.addEventListener('click', (e) => {
+        console.log("List of Images");
+        e.stopPropagation();
+    }, false);
+
+    const mountain = document.querySelector('.mountain');
+    mountain.addEventListener('click', (e) => {
+        alert("Mountain clicked");
+        e.stopPropagation();
+    }, false);
+    */
+    
+    // this to remove a particular objects
+
+    document.getElementById('image').addEventListener('click', function(e){
+        // console.log(e.target);
+        console.log(e.target.tagName)
+        if (e.target.tagName === 'IMG') {
+            let erase = e.target.parentNode;
+            erase.remove()
+        }else{}
+    }, false)
+</script>
+</html> 
