@@ -3,26 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events - Asyn</title>
+    <title>Events with Asyn</title>
 </head>
 <body>
-    <h1>Events with Asyn</h1>
-    <button>Click me</button>
+    <h2>Events with Asyn</h2>
+    <button id="click">Click me</button>
 </body>
 <script>
 
-setTimeout(function(){
-    console.log("Learning javascript");
-}, 2000)
- 
-// const innertext = function(){
-//     document.querySelector('h2').innerHTML = "Learning javascript"
-// }
-// const changes = setTimeout(innerHTML,2000)
-// document.querySelector('#click').addEventListener('click',function(){
-//     clearTimeout(changes)
-//     console.log("Stopped");
-// })
+    setTimeout(function(){
+        console.log("Click the button to hold the text");
+    }, 2000)
 
+
+    // setInterval(function(){
+    //     console.log("I am Assumed to be perfect");
+    // }, 2000);
+
+    // setInterval(() => {
+    //     console.log("I am Great");
+    // }, 1000);
+
+    const innertext = function(){
+        document.querySelector('h2').innerHTML="Learning Javascript "
+    }
+    const popup = setTimeout(innertext,4000)
+
+    document.querySelector('#click').addEventListener('click',function(){
+        clearTimeout(popup)
+        console.log("Stopped");
+    })
 </script>
 </html>
