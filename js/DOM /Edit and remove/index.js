@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM- Edit and remove</title>
-</head>
-
-<body style="background-color: #212121; color: #fff;">
-    <ul class="Language">
-        <li>
-            Javascript
-        </li>
-    </ul>
-</body>
-<script>
-
-    // we can obtained the text by two ways by using js
+ // we can obtained the text by two ways by using js
     // one way is by using inerHTML but this is not customised way
     // another way by direct create a text node
 
@@ -65,6 +47,3 @@ text.outerHTML = '<li>Typescript</li>'
 const del = document.querySelector('li:last-child')
 console.log(del);
 del.remove()
-</script>
-
-</html>
